@@ -16,7 +16,7 @@
 <meta property="og:description" content="安装CentOS 8 x64环境Win10 + 虚拟机VMware16Pro正常流程一路下来，设置空白虚拟硬盘，多个文件保存，设定虚拟机类型CentOS 8 x64去国内镜像源下载CentOS 8 x64的iso镜像，安装">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-02-03T15:36:51.000Z">
-<meta property="article:modified_time" content="2021-02-04T12:39:26.273Z">
+<meta property="article:modified_time" content="2021-02-04T12:47:12.003Z">
 <meta property="article:author" content="lwz">
 <meta property="article:tag" content="Linux">
 <meta property="article:tag" content="Hexo">
@@ -236,7 +236,7 @@
 <li><p>清理: hexo clean  </p>
 </li>
 <li><p>根据markdown博文生成网页: hexo g /hexo generate  </p>
-<h2 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h2><p>登录GitHub，新建一个仓库，仓库名称有格式要求”用户名.github.io”<br>通过cnpm安装部署插件<br><code>cnpm install --save hexo-deployer-get</code><br>设置博客根目录下的_config.yml  </p>
+<h2 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h2><p>登录GitHub，新建一个仓库，仓库名称有格式要求”用户名.github.io”<br>通过cnpm安装部署插件<br><code>cnpm install --save hexo-deployer-git</code><br>设置博客根目录下的_config.yml  </p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在底部的Deployment部分设置</span><br><span class="line">deploy:</span><br><span class="line">type: git  </span><br><span class="line">repo: 仓库地址  </span><br><span class="line">branch: master  </span><br></pre></td></tr></table></figure>
 
 <p>进行部署 hexo d<br>输入GitHub用户名和密码登录即可  </p>
